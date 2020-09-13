@@ -1,0 +1,5 @@
+train_x <- read_csv("train_x.csv")
+
+train_y <- read_csv("train_y.csv")
+
+
