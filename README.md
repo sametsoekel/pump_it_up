@@ -8,3 +8,5 @@
  -   Feature `construction_year` has many of zeros to indicate NA's they need some interest.
  
  -   Because the feature `scheme_name` has %47 missing variables, rid it off.
+ 
+ -   After ridding off unnecesary features (it may change!), there is no observations with over 20% deficiency rate
