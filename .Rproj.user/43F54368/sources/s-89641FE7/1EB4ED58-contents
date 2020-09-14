@@ -3,4 +3,8 @@
  
  ## Notes day-to-day
  
- The feature `construction_year` has many of zeros to indicate NA's they need some interest.
+ ### 14 September 2020
+ 
+ -   Feature `construction_year` has many of zeros to indicate NA's they need some interest.
+ 
+ -   Because the feature `scheme_name` has %47 missing variables, rid it off.
