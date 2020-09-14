@@ -9,4 +9,8 @@
  
  -   Because the feature `scheme_name` has %47 missing variables, rid it off.
  
- -   After ridding off unnecesary features (it may change!), there is no observations with over 20% deficiency rate
+ -   After ridding off unnecesary features (it may change!), there is no observations with over 20% missing rate
+ 
+ -   Most missing values are indicated by nothing, they need to be filled with NA.
+ 
+ -   IT MEANS THERE ABSOLUTELY ARE OBSERVATIONS OVER %20 MISSING RATIO.

@@ -1,0 +1,25 @@
+{
+    "id": "81458F5D",
+    "path": "~/Desktop/pump_it_up/R Scripts/year_predict.R",
+    "project_path": "R Scripts/year_predict.R",
+    "type": "r_source",
+    "hash": "2117120980",
+    "contents": "",
+    "dirty": false,
+    "created": 1600092629540.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "tempName": "Untitled1",
+        "cursorPosition": "32,18",
+        "scrollLine": "25"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1600106899,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1600106899312,
+    "read_only": false,
+    "read_only_alternatives": []
+}
