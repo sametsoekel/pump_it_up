@@ -1,0 +1,24 @@
+{
+    "id": "A924C10D",
+    "path": "~/Desktop/pump_it_up/R Scripts/preprocessing.R",
+    "project_path": "R Scripts/preprocessing.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1600270513110.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "cursorPosition": "55,32",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1600275655,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1600275655709,
+    "read_only": false,
+    "read_only_alternatives": []
+}

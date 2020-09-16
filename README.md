@@ -14,3 +14,12 @@
  -   Most missing values are indicated by nothing, they need to be filled with NA.
  
  -   IT MEANS THERE ABSOLUTELY ARE OBSERVATIONS OVER %20 MISSING RATIO.
+ 
+ 
+ ### 16 September 2020
+
+ -   `construction_year` filled by a Light GBM Model which saved in " Predictors " with today's date.
+
+ -   TO DO : After imputing, %20 over limit observations need to be checked again. (again and again)
+ 
+ 

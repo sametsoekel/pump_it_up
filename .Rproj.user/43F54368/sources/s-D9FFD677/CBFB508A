@@ -1,0 +1,32 @@
+{
+    "id": "CBFB508A",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1600271498788.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "expression": "yt_train_x",
+        "caption": "yt_train_x",
+        "totalObservations": 22733,
+        "displayedObservations": 22733,
+        "variables": 34,
+        "cacheKey": "22605DBF",
+        "object": "yt_train_x",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=yt_train_x&cache_key=22605DBF&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1600271296,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1600271498788,
+    "read_only": false,
+    "read_only_alternatives": []
+}

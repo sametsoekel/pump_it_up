@@ -1,0 +1,32 @@
+{
+    "id": "582D1A74",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1600273770016.0,
+    "source_on_save": false,
+    "relative_order": 6,
+    "properties": {
+        "expression": "hata",
+        "caption": "hata",
+        "totalObservations": "9740",
+        "displayedObservations": "9740",
+        "variables": "2",
+        "cacheKey": "62E0E5CC",
+        "object": "hata",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=hata&cache_key=62E0E5CC&max_cols=50",
+        "preview": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1600273620,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1600273770016,
+    "read_only": false,
+    "read_only_alternatives": []
+}
