@@ -22,4 +22,8 @@
 
  -   TO DO : After imputing, %20 over limit observations need to be checked again. (again and again)
  
+ ### 17 September 2020
+
+ -   First submission has just given. Even with a very basic mode imputation, **0.7127 Accuracy** 🚀🚀
+ 
  

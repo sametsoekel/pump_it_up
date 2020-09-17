@@ -55,6 +55,8 @@ lgbpred <- lgbmodel$predict(as.matrix(yt_test_x))
 hata <- data.frame(pred=lgbpred,obs=yt_test_y)
 defaultSummary(hata)
 
+View(hata)
+
 
 
 
@@ -117,7 +119,7 @@ lgb_final_model = lgb.train(params = lgb.grid, data = yt_train_lgb_cv, learning_
 
 pred <- lgb_final_model$predict(as.matrix(yt_test_x))
 
-hata <- data.frame(pred=round(pred),obs=yt_test_y)
+hata <- data.frame(pred=round(pred-1),obs=yt_test_y)
 defaultSummary(hata)
 
 
