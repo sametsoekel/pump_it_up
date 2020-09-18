@@ -33,7 +33,7 @@ withnoid<-train %>% select(-"id")
 
 
 
-data.frame(pred=val,obs=full_num$construction_year) %>% View()
+#data.frame(pred=val,obs=full_num$construction_year) %>% View()
 
 nnetmodel <- nnet(construction_year~.,data =withnoid,
                   size=12,rang=.1,decay=3,maxit=1000)

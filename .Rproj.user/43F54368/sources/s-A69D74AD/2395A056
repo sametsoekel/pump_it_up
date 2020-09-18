@@ -1,0 +1,25 @@
+{
+    "id": "2395A056",
+    "path": "~/Desktop/pump_it_up/R Scripts/18_eyl_imputing_train.R",
+    "project_path": "R Scripts/18_eyl_imputing_train.R",
+    "type": "r_source",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1600434932899.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "tempName": "Untitled1",
+        "cursorPosition": "339,50",
+        "scrollLine": "322"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1600439708,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1600439708407,
+    "read_only": false,
+    "read_only_alternatives": []
+}
