@@ -1,0 +1,32 @@
+{
+    "id": "CEB90E9F",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1600392387486.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "expression": "fullsubmission",
+        "caption": "fullsubmission",
+        "totalObservations": 14850,
+        "displayedObservations": 14850,
+        "variables": 35,
+        "cacheKey": "562E93BA",
+        "object": "fullsubmission",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=fullsubmission&cache_key=562E93BA&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 7954869292035437683,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1600392387486,
+    "read_only": false,
+    "read_only_alternatives": []
+}
