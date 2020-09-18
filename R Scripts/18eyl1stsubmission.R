@@ -156,3 +156,77 @@ SubmissionFormat$status_group <- textpred
 write_csv(SubmissionFormat,"6thSubByLightGBM.csv")
 
 
+
+
+
+
+
+################ LightGBM Model 2 ############
+
+
+
+params <- list(objective = "multiclass", metric = "multi_logloss",num_class=3)
+lgbmodel2 <- lgb.train(
+  params = params
+  , data = dtrain
+  , nrounds = 3000
+  , min_data = 1L
+  , valids = valids
+  , learning_rate = 0.037
+  , early_stopping_rounds = 150
+)
+
+preds2 <- predict(lgbmodel2,as.matrix(train_x),reshape = T)
+
+tahmin <- preds2 %>% data.frame()
+
+myf <- function(x){
+  match(max(x),x)
+}
+preds2 <- apply(tahmin,1,myf)-1
+preds2 <- as.factor(preds2)
+
+confusionMatrix(preds2,as.factor(train_y))
+
+
+############## %91 train hatası
+
+
+preds3 <- predict(lgbmodel2,as.matrix(test_x),reshape = T)
+
+tahmin2 <- preds3 %>% data.frame()
+
+myf <- function(x){
+  match(max(x),x)
+}
+preds3 <- apply(tahmin2,1,myf)-1
+preds3 <- as.factor(preds3)
+
+confusionMatrix(preds3,as.factor(test_y))
+
+
+##################### %80 test hatası
+
+################ giving submission
+
+predsub <- predict(lgbmodel2,as.matrix(x),reshape = T)
+
+tahmin3 <- predsub %>% data.frame()
+
+myf <- function(x){
+  match(max(x),x)
+}
+predsub <- apply(tahmin3,1,myf)-1
+predsub <- as.factor(predsub)
+length(predsss)
+
+
+textpred <- ifelse(predsub==0,"functional",
+                   ifelse(predsub==1,"functional needs repair","non functional"))
+
+
+
+SubmissionFormat$status_group <- textpred
+
+write_csv(SubmissionFormat,"7thSubmissionByLightGBM.csv")
+

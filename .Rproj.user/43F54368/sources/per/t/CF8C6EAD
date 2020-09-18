@@ -3,7 +3,7 @@
     "path": "~/Desktop/pump_it_up/R Scripts/18eyl1stsubmission.R",
     "project_path": "R Scripts/18eyl1stsubmission.R",
     "type": "r_source",
-    "hash": "2432250659",
+    "hash": "1071044765",
     "contents": "",
     "dirty": false,
     "created": 1600441727927.0,
@@ -11,15 +11,15 @@
     "relative_order": 2,
     "properties": {
         "tempName": "Untitled1",
-        "cursorPosition": "143,32",
-        "scrollLine": "139"
+        "cursorPosition": "223,43",
+        "scrollLine": "213"
     },
     "folds": "",
-    "lastKnownWriteTime": 1600446715,
+    "lastKnownWriteTime": 1600452875,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1600446715556,
+    "last_content_update": 1600452875780,
     "read_only": false,
     "read_only_alternatives": []
 }

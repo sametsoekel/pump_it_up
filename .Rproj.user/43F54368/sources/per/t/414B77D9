@@ -1,0 +1,32 @@
+{
+    "id": "414B77D9",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1600452409349.0,
+    "source_on_save": false,
+    "relative_order": 6,
+    "properties": {
+        "expression": "tahmin",
+        "caption": "tahmin",
+        "totalObservations": 35000,
+        "displayedObservations": 35000,
+        "variables": 3,
+        "cacheKey": "0A904331",
+        "object": "tahmin",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=tahmin&cache_key=0A904331&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1600452296,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1600452409349,
+    "read_only": false,
+    "read_only_alternatives": []
+}
