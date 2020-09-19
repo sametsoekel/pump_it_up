@@ -230,3 +230,97 @@ SubmissionFormat$status_group <- textpred
 
 write_csv(SubmissionFormat,"7thSubmissionByLightGBM.csv")
 
+
+
+
+
+
+############# for fun
+
+
+funindex <- sample(1:nrow(df),34500)
+
+funtrain <- df[funindex,] %>% select(-"id")
+funtest <- df[-funindex,] %>% select(-"id")
+
+
+
+funtrainx <- funtrain %>% select(-"trgt")
+funtrainy <- as.numeric(funtrain$trgt)-1
+
+funtestx <- funtest %>% select(-"trgt")
+funtesty <- as.numeric(funtest$trgt)-1
+
+lgbtrain <- lgb.Dataset(as.matrix(funtrainx),label=funtrainy)
+lgbtest <- lgb.Dataset(as.matrix(funtestx),label=funtesty)
+valids <- list(test = lgbtest)
+
+catnames <- funtestx %>% purrr::keep(is.factor) %>% names()
+
+
+
+params <- list(objective = "multiclass", metric = "multi_logloss",num_class=3)
+lgbmodel3 <- lgb.train(
+  params = params
+  , data = lgbtrain
+  , nrounds = 1000
+  , min_data = 20
+  , valids = valids
+  , learning_rate = 0.3
+  , early_stopping_rounds = 10
+  , categorical_feature = catnames
+)
+
+
+prd3 <- predict(lgbmodel3,as.matrix(funtrainx),reshape = T)
+funpred <- apply(prd3,1,myf)-1
+funpred <- as.factor(funpred)
+
+
+confusionMatrix(funpred,as.factor(funtrainy))
+
+
+
+(1:10) %% 2
+
+
+
+################## catboost model
+
+
+
+learnpool <- catboost.load_pool(funtrainx,label = funtrainy,cat_features = catnames)
+testpool <- catboost.load_pool(funtestx,label = funtesty,cat_features = catnames)
+
+catparam <- list(use_best_model=T,loss_function='MultiClass',custom_loss='Accuracy',
+                 prediction_type='Class',learning_rate=0.037)
+
+
+catmodel <- catboost.train(learnpool,testpool,catparam)
+
+
+catpred <- catboost.predict(catmodel,learnpool,verbose = T,prediction_type = "Class")
+
+catpred <- catpred %>% as.factor()
+
+confusionMatrix(catpred,as.factor(funtrainy)) ### %81 train,test hatası
+
+
+
+
+####### make submission with catmodel
+
+subpool <- targetsub %>% select(-"id") %>% catboost.load_pool(cat_features = catnames)
+
+catpred <- catboost.predict(catmodel,subpool,verbose = T,prediction_type = "Class")
+
+catpred <- catpred %>% as.factor()
+
+
+textpred <- ifelse(catpred==0,"functional",
+                   ifelse(catpred==1,"functional needs repair","non functional"))
+
+SubmissionFormat$status_group<-textpred
+
+
+write_csv(SubmissionFormat,"8thSubByCatBOOST.csv")
