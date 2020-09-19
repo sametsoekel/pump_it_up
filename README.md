@@ -40,6 +40,14 @@
  -   TO DO : Train set will be imputed predicatively, observations with more than 20% missing rate will be deleted and three different model will be deployed for 5th, 6th and 7th submissions.
  
  
+ ### 19 September 2020 
+ 
+ -   The last three submissions (5th, 6th and 7th) has just been given (modeled by NeuralNet,LightGBM,LightGBM respectively).
+ 
+ -   Their accuracies are **0.7504**, **0.7615** and **0.7662** respectively 🚀🚀
+ 
+ -   TO DO : For 20 September's submission; a catboost model will be deployed to make submission. According to its succes, imputation of training and target sets may be checked again.
+ 
  
  
  
