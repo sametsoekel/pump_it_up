@@ -308,6 +308,26 @@ confusionMatrix(catpred,as.factor(funtrainy)) ### %81 train,test hatası
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ####### make submission with catmodel
 
 subpool <- targetsub %>% select(-"id") %>% catboost.load_pool(cat_features = catnames)
@@ -324,3 +344,29 @@ SubmissionFormat$status_group<-textpred
 
 
 write_csv(SubmissionFormat,"8thSubByCatBOOST.csv")
+
+
+
+
+
+
+
+
+eylul20 <- read.csv("~/Desktop/pump_it_up/ImputedCatBoostModMedian2.csv", stringsAsFactors=TRUE)
+
+subpool <- eylul20 %>% select(-"id") %>% catboost.load_pool(cat_features = catnames)
+
+catpred <- catboost.predict(catmodel,subpool,verbose = T,prediction_type = "Class")
+
+catpred <- catpred %>% as.factor()
+
+
+textpred <- ifelse(catpred==0,"functional",
+                   ifelse(catpred==1,"functional needs repair","non functional"))
+
+
+SubmissionFormat$status_group <- textpred
+
+
+
+write_csv(SubmissionFormat,"10thSubByCatBoost.csv")
