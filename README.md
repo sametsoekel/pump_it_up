@@ -48,8 +48,15 @@
  
  -   TO DO : For 20 September's submission; a catboost model will be deployed to make submission. According to its succes, imputation of training and target sets may be checked again.
  
+ ### 20 September 2020
  
+ -   8th and 9th submissions were given, accuracy scores are **0.8015** and **0.7838** respectively 🚀🚀🚀
+   
+ -   Decided to use catboost in next few submissions thanks to high classification score.
  
+ -   Imputation, imputation, imputation !
+ 
+ -   TO DO : This day is not finished yet, just begun. Will impute original prediction set by catboost and give the last submission of the day.
  
   
 
