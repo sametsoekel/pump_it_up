@@ -59,6 +59,14 @@
  -   TO DO : This day is not finished yet, just begun. Will impute original prediction set by catboost and give the last submission of the day.
  
   
-
+ ### 23 September 2020
+ 
+ -   Because of other works I deal with, this project is over for now.
+ 
+ -   All steps saved on this repository, hope that I remember these days with a laugh :)
+ 
+<center>
+ <h1>🎉 0.8015 🎉</h1> 
+</center> 
  
  
