@@ -65,9 +65,9 @@
  
  -   All steps saved on this repository, hope that I remember these days with a laugh :)
  
-<center><h1>🎉 0.8015 🎉</h1> </center>
+<div style="text-align:center"><h1>🎉 0.8015 🎉</h1></div>
 
 
-<center><img src="https://raw.githubusercontent.com/sametsoekel/pump_it_up/master/rank.png"></center> 
+<div style="text-align:center"><img src="https://raw.githubusercontent.com/sametsoekel/pump_it_up/master/rank.png"></div> 
  
  
